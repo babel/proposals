@@ -4,7 +4,7 @@
 
 ## Proposals
 
-This contains contains all proposals higher than Stage 0 that are compilable by Babel. For the official list, check the [TC39 repo](https://github.com/tc39/proposals)
+For the official list, check the [TC39 repo](https://github.com/tc39/proposals). This list only contains all proposals higher than Stage 0 that are compilable by Babel.
 
 | Proposal                                                                                                    | Champion                           | Stage |
 |-------------------------------------------------------------------------------------------------------------|------------------------------------|-------|
