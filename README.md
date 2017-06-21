@@ -6,7 +6,7 @@
 
 For the official list, check the [TC39 repo](https://github.com/tc39/proposals). This list only contains all proposals higher than Stage 0 that are compilable by Babel.
 
-| Proposal                                                                                                    | Champion                           | Stage |
+| Proposal Repo                                                                                               | Champion                           | Stage |
 |-------------------------------------------------------------------------------------------------------------|------------------------------------|-------|
 | [Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread)                               | Sebastian Markbage                 | 3 |
 | [Asynchronous Iteration](https://github.com/tc39/proposal-async-iteration)                                  | Domenic Denicola                   | 3 |
@@ -27,3 +27,4 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 | [Null Propagation](https://docs.google.com/presentation/d/11O_wIBBbZgE1bMVRJI8kGnmC6dWCBOwutbN9SWOK0fU/view) | Gabriel Isenberg                  | 1 |
 | [`do` expressions](https://gist.github.com/dherman/1c97dfb25179fa34a41b5fff040f9879)                         | Dave Herman                       | 1 |
 | [Numeric separators](https://github.com/samuelgoto/proposal-numeric-separator)                               | Sam Goto                          | 1 |
+| [Function bind syntax](https://github.com/zenparsing/es-function-bind)                                       | Brian Terlson & Matthew Podwysocki | 0  |
