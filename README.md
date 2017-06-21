@@ -1,11 +1,10 @@
 # Babel progress on [ECMAScript](https://github.com/tc39/ecma262) proposals
 
- - [TC39 Proposals Repo](https://github.com/tc39/proposals)
+## [Official TC39 Proposals Repo](https://github.com/tc39/proposals)
 
-## Active proposals
+## Proposals
 
-Proposals follow [this process document](https://tc39.github.io/process-document/).
-This list contains stage 0 proposals and higher that have not yet been withdrawn/rejected, or become finished (and are compilable by Babel). Thus filtering out any polyfillable proposals.
+This contains contains all proposals higher than Stage 0 that are compilable by Babel.
 
 | Proposal                                                                                                    | Champion                           | Stage |
 |-------------------------------------------------------------------------------------------------------------|------------------------------------|-------|
