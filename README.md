@@ -6,7 +6,7 @@
 
 For the official list, check the [TC39 repo](https://github.com/tc39/proposals). This list only contains all proposals higher than Stage 0 that are compilable by Babel.
 
-| Proposal Repo                                                                                               | Champion                           | Stage |
+| Proposal Repo                                                                                               | TC39 Champion                       | Stage |
 |-------------------------------------------------------------------------------------------------------------|------------------------------------|-------|
 | [Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread)                               | Sebastian Markbage                 | 3 |
 | [Asynchronous Iteration](https://github.com/tc39/proposal-async-iteration)                                  | Domenic Denicola                   | 3 |
