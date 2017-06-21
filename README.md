@@ -19,7 +19,6 @@ This list contains stage 0 proposals and higher that have not yet been withdrawn
 |   | [Legacy RegExp features in JavaScript](https://github.com/tc39/proposal-regexp-legacy-features)             | Mark Miller, Claude Pache          | 3 |
 |   | [`function.sent` metaproperty](https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md)  | Allen Wirfs-Brock                  | 2 |
 |   | [Class Fields](https://github.com/tc39/proposal-class-fields)                                               | Daniel Ehrenberg, Jeff Morrison    | 2 |
-| 🚀 | [`Promise.prototype.finally`](https://github.com/tc39/proposal-promise-finally)                             | Jordan Harband                     | 2 |
 |   | [Class and Property Decorators](http://tc39.github.io/proposal-decorators/)                                 | Yehuda Katz and Brian Terlson      | 2 |
 |   | [Arbitrary-precision Integers](https://github.com/tc39/proposal-integer)                                    | Daniel Ehrenberg                   | 2 |
 |   | [`import.meta`](https://github.com/tc39/proposal-import-meta)                                               | Domenic Denicola                   | 2 |
