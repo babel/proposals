@@ -15,7 +15,6 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 | [RegExp Unicode Property Escapes](https://github.com/tc39/proposal-regexp-unicode-property-escapes)         | Brian Terlson, Daniel Ehrenberg, Mathias Bynens | 3 |
 | [RegExp named capture groups](https://github.com/tc39/proposal-regexp-named-groups)                         | Daniel Ehrenberg, Brian Terlson    | 3 |
 | [`s` (`dotAll`) flag for regular expressions](https://github.com/mathiasbynens/es-regexp-dotall-flag)       | Mathias Bynens, Brian Terlson      | 3 |
-| [Legacy RegExp features in JavaScript](https://github.com/tc39/proposal-regexp-legacy-features)             | Mark Miller, Claude Pache          | 3 |
 | [`function.sent` metaproperty](https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md)  | Allen Wirfs-Brock                  | 2 |
 | [Class Fields](https://github.com/tc39/proposal-class-fields)                                               | Daniel Ehrenberg, Jeff Morrison    | 2 |
 | [Class and Property Decorators](http://tc39.github.io/proposal-decorators/)                                 | Yehuda Katz and Brian Terlson      | 2 |
