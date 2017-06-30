@@ -11,8 +11,8 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 | [Rest/Spread Properties](#restspread-properties)                               | 3     |
 | [Asynchronous Iteration](#asynchronous-iteration)                                  | 3     |
 | [Dynamic Import](#dynamic-import)                                               | 3     |
-| [RegExp Unicode Property Escapes](https://github.com/tc39/proposal-regexp-unicode-property-escapes)         | 3     |
-| [RegExp named capture groups](https://github.com/tc39/proposal-regexp-named-groups)                         | 3     |
+| [RegExp Unicode Property Escapes](#regexp-unicode-property-escapes)         | 3     |
+| [RegExp Named Capture Groups](#regexp-named-capture-groups)                         | 3     |
 | [`s` (`dotAll`) flag for regular expressions](https://github.com/mathiasbynens/es-regexp-dotall-flag)       | 3     |
 | [`function.sent` metaproperty](https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md)  | 2     |
 | [Class Fields](https://github.com/tc39/proposal-class-fields)                                               | 2     |
@@ -92,6 +92,42 @@ Node: https://www.npmjs.com/package/babel-plugin-dynamic-import-node
 import('test-module').then(() => (
   import('test-module-2');
 ));
+```
+</details>
+
+### [RegExp Unicode Property Escapes](https://github.com/tc39/proposal-regexp-unicode-property-escapes)
+
+**TC39 Champion**: Brian Terlson, Daniel Ehrenberg, Mathias Bynens  
+**Preset**: [babel-preset-stage-3](https://www.npmjs.com/package/babel-preset-stage-3)  
+**Plugins**: [babel-plugin-transform-unicode-property-regex](https://www.npmjs.com/package/babel-plugin-transform-unicode-property-regex)  
+<details>
+<summary>Code Example</summary>
+
+```js
+const a = /^\p{Decimal_Number}+$/u;
+const b = /\p{Script_Extensions=Greek}/u;
+```
+</details>
+
+### [RegExp Named Capture Groups](https://github.com/tc39/proposal-regexp-named-groups)
+
+**TC39 Champion**: Daniel Ehrenberg, Brian Terlson  
+**Preset**: N/A
+**Plugins**: [babel-plugin-transform-modern-regexp](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp)  
+<details>
+<summary>Code Example</summary>
+
+```js
+let re = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/u;
+let result = re.exec('2015-01-02');
+// result.groups.year === '2015';
+// result.groups.month === '01';
+// result.groups.day === '02';
+
+// result[0] === '2015-01-02';
+// result[1] === '2015';
+// result[2] === '01';
+// result[3] === '02';
 ```
 </details>
 
