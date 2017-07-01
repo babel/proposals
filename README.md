@@ -6,13 +6,13 @@
 
 For the official list, check the [TC39 repo](https://github.com/tc39/proposals). This list only contains all proposals higher than Stage 0 that are compilable by Babel. (If Stage 4, it will be in [preset-env](https://github.com/babel/babel-preset-env))
 
-| Proposal Repo                                                                                               | Stage |
-|-------------------------------------------------------------------------------------------------------------|-------|
-| [Rest/Spread Properties](#restspread-properties)                               | 3     |
-| [Asynchronous Iteration](#asynchronous-iteration)                                  | 3     |
-| [Dynamic Import](#dynamic-import)                                               | 3     |
+| Proposal Link                                                               | Stage |
+|-----------------------------------------------------------------------------|-------|
+| [Rest/Spread Properties](#restspread-properties)                            | 3     |
+| [Asynchronous Iteration](#asynchronous-iteration)                           | 3     |
+| [Dynamic Import](#dynamic-import)                                           | 3     |
 | [RegExp Unicode Property Escapes](#regexp-unicode-property-escapes)         | 3     |
-| [RegExp Named Capture Groups](#regexp-named-capture-groups)                         | 3     |
+| [RegExp Named Capture Groups](#regexp-named-capture-groups)                 | 3     |
 | [`s` (`dotAll`) flag for regular expressions](https://github.com/mathiasbynens/es-regexp-dotall-flag)       | 3     |
 | [`function.sent` metaproperty](https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md)  | 2     |
 | [Class Fields](https://github.com/tc39/proposal-class-fields)                                               | 2     |
@@ -21,11 +21,11 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 | [`import.meta`](https://github.com/tc39/proposal-import-meta)                                               | 2     |
 | [`export * as ns from "mod";` statements](https://github.com/leebyron/ecmascript-export-ns-from)            | 1     |
 | [`export v from "mod";` statements](https://github.com/leebyron/ecmascript-export-default-from)             | 1     |
-| Generator arrow functions (`=>*`)                                                                           | 1     |
-| [Null Propagation](https://docs.google.com/presentation/d/11O_wIBBbZgE1bMVRJI8kGnmC6dWCBOwutbN9SWOK0fU/view)| 1     |
-| [`do` Expressions](#do-expressions)                        | 1     |
-| [Numeric Separator](#numeric-separator)                              | 1     |
-| [Function Bind](#function-bind)                                      | 0     |
+| [Generator Arrow Functions](#generator-arrow-functions)                     | 1     |
+| [Optional Chaining](#optional-chaining)                                     | 1     |
+| [`do` Expressions](#do-expressions)                                         | 1     |
+| [Numeric Separator](#numeric-separator)                                     | 1     |
+| [Function Bind](#function-bind)                                             | 0     |
 
 ## Implemented
 
@@ -132,6 +132,23 @@ let result = re.exec('2015-01-02');
 ```
 </details>
 
+### [Optional Chaining](https://github.com/tc39/proposal-optional-chaining)
+
+**TC39 Champion**: Gabriel Isenberg  
+**Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)  
+**Plugins**: [babel-plugin-transform-optional-chaining](https://www.npmjs.com/package/babel-plugin-transform-optional-chaining)  
+<details>
+<summary>Code Example</summary>
+
+```js
+obj?.prop       // optional property access
+obj?.[expr]     // optional property access
+func?.(...args) // optional function or method call
+
+a?.b = 42; // a == null ? undefined : a.b = 42;
+```
+</details>
+
 ### [`do` Expressions](https://gist.github.com/dherman/1c97dfb25179fa34a41b5fff040f9879)
 
 **TC39 Champion**: Dave Herman  
@@ -197,3 +214,16 @@ func.call(obj, val)
 ## Parser Only
 
 ## Not Implemented
+
+### Generator Arrow Functions
+
+**TC39 Champion**: Brendan Eich, Domenic Denicola  
+**Preset**: N/A  
+**Plugins**: N/A  
+<details>
+<summary>Code Example</summary>
+
+```js
+()=>*{}
+```
+</details>
