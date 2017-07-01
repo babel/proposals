@@ -23,9 +23,9 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 | [`export v from "mod";` statements](https://github.com/leebyron/ecmascript-export-default-from)             | 1     |
 | Generator arrow functions (`=>*`)                                                                           | 1     |
 | [Null Propagation](https://docs.google.com/presentation/d/11O_wIBBbZgE1bMVRJI8kGnmC6dWCBOwutbN9SWOK0fU/view)| 1     |
-| [`do` expressions](https://gist.github.com/dherman/1c97dfb25179fa34a41b5fff040f9879)                        | 1     |
-| [Numeric separators](https://github.com/samuelgoto/proposal-numeric-separator)                              | 1     |
-| [Function bind syntax](https://github.com/zenparsing/es-function-bind)                                      | 0     |
+| [`do` Expressions](#do-expressions)                        | 1     |
+| [Numeric Separator](#numeric-separator)                              | 1     |
+| [Function Bind](#function-bind)                                      | 0     |
 
 ## Implemented
 
@@ -119,6 +119,7 @@ const b = /\p{Script_Extensions=Greek}/u;
 
 ```js
 let re = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/u;
+
 let result = re.exec('2015-01-02');
 // result.groups.year === '2015';
 // result.groups.month === '01';
@@ -128,6 +129,68 @@ let result = re.exec('2015-01-02');
 // result[1] === '2015';
 // result[2] === '01';
 // result[3] === '02';
+```
+</details>
+
+### [`do` Expressions](https://gist.github.com/dherman/1c97dfb25179fa34a41b5fff040f9879)
+
+**TC39 Champion**: Dave Herman  
+**Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)  
+**Plugins**: [babel-plugin-transform-do-expressions](https://www.npmjs.com/package/babel-plugin-transform-do-expressions)  
+<details>
+<summary>Code Example</summary>
+
+```js
+let a = do {
+  if (x > 10) {
+    'big';
+  } else {
+    'small';
+  }
+};
+
+// let a = x > 10 ? 'big' : 'small';
+```
+</details>
+
+### [Numeric Separator](https://github.com/tc39/proposal-numeric-separator)
+
+**TC39 Champion**: Sam Goto  
+**Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)  
+**Plugins**: [babel-plugin-transform-numeric-separator](https://www.npmjs.com/package/babel-plugin-transform-numeric-separator)  
+<details>
+<summary>Code Example</summary>
+
+```js
+// Decimal Literals
+let budget = 1_000_000_000_000;
+// Binary Literals
+let nibbles = 0b1010_0001_1000_0101;
+// Hex Literal
+let message = 0xA0_B0_C0;
+```
+</details>
+
+### [Function Bind](https://github.com/tc39/proposal-regexp-named-groups)
+
+**TC39 Champion**: Brian Terlson & Matthew Podwysocki  
+**Preset**: [babel-preset-stage-0](https://www.npmjs.com/package/babel-preset-stage-0)  
+**Plugins**: [babel-plugin-transform-function-bind](https://www.npmjs.com/package/babel-plugin-transform-function-bind)  
+<details>
+<summary>Code Example</summary>
+
+```js
+obj::func
+// is equivalent to:
+func.bind(obj)
+
+obj::func(val)
+// is equivalent to:
+func.call(obj, val)
+
+::obj.func(val)
+// is equivalent to:
+func.call(obj, val)
 ```
 </details>
 
