@@ -6,27 +6,26 @@
 
 For the official list, check the [TC39 repo](https://github.com/tc39/proposals). This list only contains all proposals higher than Stage 0 that are compilable by Babel. (If Stage 4, it will be in [preset-env](https://github.com/babel/babel-preset-env))
 
-| Proposal Link                                                               | Stage |
-|-----------------------------------------------------------------------------|-------|
-| [Rest/Spread Properties](#restspread-properties)                            | 3     |
-| [Asynchronous Iteration](#asynchronous-iteration)                           | 3     |
-| [Dynamic Import](#dynamic-import)                                           | 3     |
-| [RegExp Unicode Property Escapes](#regexp-unicode-property-escapes)         | 3     |
-| [RegExp Named Capture Groups](#regexp-named-capture-groups)                 | 3     |
-| [`s` (`dotAll`) flag for regular expressions](https://github.com/mathiasbynens/es-regexp-dotall-flag)       | 3     |
-| [`function.sent` metaproperty](https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md)  | 2     |
-| [Class Fields](https://github.com/tc39/proposal-class-fields)                                               | 2     |
-| [Class and Property Decorators](http://tc39.github.io/proposal-decorators/)                                 | 2     |
-| [Arbitrary-precision Integers](https://github.com/tc39/proposal-integer)                                    | 2     |
-| [`import.meta`](https://github.com/tc39/proposal-import-meta)                                               | 2     |
-| [`export * as ns from "mod";` statements](https://github.com/leebyron/ecmascript-export-ns-from)            | 1     |
-| [`export v from "mod";` statements](https://github.com/leebyron/ecmascript-export-default-from)             | 1     |
-| [Generator Arrow Functions](#generator-arrow-functions)                     | 1     |
-| [Optional Chaining](#optional-chaining)                                     | 1     |
-| [`do` Expressions](#do-expressions)                                         | 1     |
-| [Numeric Separator](#numeric-separator)                                     | 1     |
-| [Function Bind](#function-bind)                                             | 0     |
-
+| Proposal Link                                                       | Current Stage | Status   |
+|---------------------------------------------------------------------|---------------|----------|
+| [Rest/Spread Properties](#restspread-properties)                    | 3             | 3        |
+| [Asynchronous Iteration](#asynchronous-iteration)                   | 3             | 3        |
+| [Dynamic Import](#dynamic-import)                                   | 3             | 3        |
+| [RegExp Unicode Property Escapes](#regexp-unicode-property-escapes) | 3             | 3        |
+| [RegExp Named Capture Groups](#regexp-named-capture-groups)         | 3             | 3        |
+| [RegExp DotAll Flag](#regexp-dotall-flag)                           | 3             | 3        |
+| [`function.sent`](#functionsent)                                    | 2             | Parseble |
+| [Class Fields](#class-fields)                                       | 2             | 2        |
+| [Class and Property Decorators](#class-and-property-decorators)     | 2             | 1        |
+| [BigInt](#bigint)                                                   | 2             | Parseble |
+| [`import.meta`](#importmeta)                                        | 2             | Parseble |
+| [`export * as ns from "mod";`](#export-extensions)                  | 1             | 1        |
+| [`export v from "mod";`](#export-extensions)                        | 1             | 1        |
+| [Generator Arrow Functions](#generator-arrow-functions)             | 1             | N/A      |
+| [Optional Chaining](#optional-chaining)                             | 1             | 1        |
+| [`do` Expressions](#do-expressions)                                 | 1             | 1        |
+| [Numeric Separator](#numeric-separator)                             | 1             | 1        |
+| [Function Bind](#function-bind)                                     | 0             | 0        |
 ## Implemented
 
 ### [Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread)
@@ -113,7 +112,7 @@ const b = /\p{Script_Extensions=Greek}/u;
 
 **TC39 Champion**: Daniel Ehrenberg, Brian Terlson  
 **Preset**: N/A
-**Plugins**: [babel-plugin-transform-modern-regexp](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp)  
+**Plugins**: [babel-plugin-transform-modern-regexp with `namedCapturingGroups` flag](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp)  
 <details>
 <summary>Code Example</summary>
 
@@ -129,6 +128,91 @@ let result = re.exec('2015-01-02');
 // result[1] === '2015';
 // result[2] === '01';
 // result[3] === '02';
+```
+</details>
+
+### [Regexp DotAll Flag](https://github.com/tc39/proposal-regexp-dotall-flag)
+
+**TC39 Champion**: Daniel Ehrenberg, Jeff Morrison 
+**Preset**: N/A
+**Plugins**: [babel-plugin-transform-dotall-regex](https://github.com/mathiasbynens/babel-plugin-transform-dotall-regex), [babel-plugin-transform-modern-regexp with `dotAll` flag](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp)     
+<details>
+<summary>Code Example</summary>
+
+```js
+/./s; // /[\0-\uFFFF]/;
+```
+</details>
+
+### [Class Fields](https://github.com/tc39/proposal-class-fields)
+
+**TC39 Champion**: Daniel Ehrenberg, Jeff Morrison 
+
+> Stage 2
+
+**Preset**: WIP
+**Plugins**: WIP
+
+> Stage 1
+
+**Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)   
+**Plugins**: [babel-plugin-transform-class-properties](babel-plugin-transform-class-properties)   
+<details>
+<summary>Code Example</summary>
+
+```js
+class Bork {
+  instanceProperty = "bork";
+  boundFunction = () => {
+    return this.instanceProperty;
+  }
+
+  static staticProperty = "babelIsCool";
+  static staticFunction = function() {
+    return Bork.staticProperty;
+  }
+}
+```
+</details>
+
+### [Class and Property Decorators](https://github.com/tc39/proposal-decorators)
+
+**TC39 Champion**: Yehuda Katz and Brian Terlson 
+
+> Stage 2
+
+**Preset**: WIP
+**Plugins**: WIP
+
+> Stage 1
+
+**Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)   
+**Plugins**: [babel-plugin-transform-decorators](babel-plugin-transform-decorators), [babel-plugin-transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)   
+<details>
+<summary>Code Example</summary>
+
+```js
+@frozen class Foo {
+  @configurable(false) @enumerable(true) method() {}
+}
+```
+</details>
+
+### Export Extensions
+
+> This proposal was split into 2:  
+> https://github.com/tc39/proposal-export-ns-from  
+> https://github.com/tc39/ecmascript-export-default-from  
+
+**TC39 Champion**: Lee Byron  
+**Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)  
+**Plugins**: [babel-plugin-transform-export-extensions](https://www.npmjs.com/package/babel-plugin-transform-export-extensions)  
+<details>
+<summary>Code Example</summary>
+
+```js
+export * as ns from 'mod'; // export-ns-from
+export v from 'mod'; // export default from
 ```
 </details>
 
@@ -212,6 +296,55 @@ func.call(obj, val)
 </details>
 
 ## Parser Only
+
+### `function.sent`
+
+**Info**: https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md
+**TC39 Champion**: Allen Wirfs-Brock   
+**Preset**: WIP  
+**Plugins**: WIP  
+
+### [BigInt](https://github.com/tc39/proposal-bigint)
+
+**TC39 Champion**: Daniel Ehrenberg   
+**Preset**: WIP  
+**Plugins**: WIP  
+**First Pull Request**: [babel/babylon#588](https://github.com/babel/babylon/pull/588) by [@wdhorton](https://github.com/wdhorton)  
+**Babylon Label**: [Spec: BigInt](https://github.com/babel/babylon/issues?utf8=%E2%9C%93&q=label%3A%22Spec%3A%20BigInt%22%20)  
+<details>
+<summary>Code Example</summary>
+```js
+1n; // integer
+0b101n // binary
+0xFF123n // hex
+0o16432n // octal
+9223372036854775807n // larger than floating
+```
+</details>
+
+<details>
+<summary>Invalid Example</summary>
+```js
+// Invalid
+1.0n // no decimals
+2e9n // no exponential notation
+016n // no old octal
+```
+</details>
+
+### [`import.meta`](https://github.com/tc39/proposal-import-meta)
+
+**TC39 Champion**: Domenic Denicola  
+**Preset**: [babel-preset-stage-2](https://www.npmjs.com/package/babel-preset-stage-2)  
+**Plugins**: [babel-plugin-syntax-import-meta](https://www.npmjs.com/package/babel-plugin-syntax-import-meta)  
+<details>
+<summary>Code Example</summary>
+
+```js
+import.meta.url;
+mport.meta.scriptElement.dataset.size;
+```
+</details>
 
 ## Not Implemented
 
