@@ -264,6 +264,8 @@ let a = do {
 **TC39 Champion**: Sam Goto  
 **Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)  
 **Plugins**: [babel-plugin-transform-numeric-separator](https://www.npmjs.com/package/babel-plugin-transform-numeric-separator)  
+**First Pull Request**: [babel/balylon#538](https://github.com/babel/babylon/issues/538)
+**Babylon Label**: [Spec: Numeric Separator](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Numeric+Separator%22)
 <details>
 <summary>Code Example</summary>
 
