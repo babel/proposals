@@ -38,19 +38,19 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 <summary>Code Example</summary>
 
 ```js
-// Rest properties 
+// Rest properties
 let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
-console.log(x); // 1 
-console.log(y); // 2 
-console.log(z); // { a: 3, b: 4 } 
- 
-// Spread properties 
+console.log(x); // 1
+console.log(y); // 2
+console.log(z); // { a: 3, b: 4 }
+
+// Spread properties
 let n = { x, y, ...z };
-console.log(n); // { x: 1, y: 2, a: 3, b: 4 } 
+console.log(n); // { x: 1, y: 2, a: 3, b: 4 }
 ```
 </details>
 
-### [Asynchronous Iteration](https://github.com/tc39/proposal-async-iteration) 
+### [Asynchronous Iteration](https://github.com/tc39/proposal-async-iteration)
 
 **TC39 Champion**: Domenic Denicola  
 **Preset**: [babel-preset-stage-3](https://www.npmjs.com/package/babel-preset-stage-3)  
@@ -73,7 +73,7 @@ async function f() {
 ```
 </details>
 
-### [Dynamic Import](https://github.com/tc39/proposal-dynamic-import) 
+### [Dynamic Import](https://github.com/tc39/proposal-dynamic-import)
 
 **TC39 Champion**: Domenic Denicola  
 **Preset**: [babel-preset-stage-3](https://www.npmjs.com/package/babel-preset-stage-3)  
@@ -133,7 +133,7 @@ let result = re.exec('2015-01-02');
 
 ### [Regexp DotAll Flag](https://github.com/tc39/proposal-regexp-dotall-flag)
 
-**TC39 Champion**: Daniel Ehrenberg, Jeff Morrison 
+**TC39 Champion**: Daniel Ehrenberg, Jeff Morrison
 **Preset**: N/A
 **Plugins**: [babel-plugin-transform-dotall-regex](https://github.com/mathiasbynens/babel-plugin-transform-dotall-regex), [babel-plugin-transform-modern-regexp with `dotAll` flag](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp)     
 <details>
@@ -146,7 +146,7 @@ let result = re.exec('2015-01-02');
 
 ### [Class Fields](https://github.com/tc39/proposal-class-fields)
 
-**TC39 Champion**: Daniel Ehrenberg, Jeff Morrison 
+**TC39 Champion**: Daniel Ehrenberg, Jeff Morrison
 
 > Stage 2
 
@@ -177,7 +177,7 @@ class Bork {
 
 ### [Class and Property Decorators](https://github.com/tc39/proposal-decorators)
 
-**TC39 Champion**: Yehuda Katz and Brian Terlson 
+**TC39 Champion**: Yehuda Katz and Brian Terlson
 
 > Stage 2
 
@@ -342,7 +342,7 @@ func.call(obj, val)
 
 ```js
 import.meta.url;
-mport.meta.scriptElement.dataset.size;
+import.meta.scriptElement.dataset.size;
 ```
 </details>
 
