@@ -338,6 +338,8 @@ func.call(obj, val)
 **TC39 Champion**: Domenic Denicola  
 **Preset**: [babel-preset-stage-2](https://www.npmjs.com/package/babel-preset-stage-2)  
 **Plugins**: [babel-plugin-syntax-import-meta](https://www.npmjs.com/package/babel-plugin-syntax-import-meta)  
+**First Pull Request**: [babel/babylon#544](https://github.com/babel/babylon/pull/544)  
+**Babylon Label**: [Spec: import.meta](https://github.com/babel/babylon/issues?q=import.meta+is%3Aclosed+label%3A%22Spec%3A+import.meta%22)  
 <details>
 <summary>Code Example</summary>
 
