@@ -152,6 +152,8 @@ let result = re.exec('2015-01-02');
 
 **Preset**: WIP  
 **Plugins**: WIP  
+**First Pull Request**: [babel/babylon#540](https://github.com/babel/babylon/issues/540)
+**Babylon Label**: [Spec: Class Fields](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Class+Fields%22)  
 
 > Stage 1
 
