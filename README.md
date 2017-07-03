@@ -313,6 +313,7 @@ func.call(obj, val)
 **Babylon Label**: [Spec: BigInt](https://github.com/babel/babylon/issues?utf8=%E2%9C%93&q=label%3A%22Spec%3A%20BigInt%22%20)  
 <details>
 <summary>Code Example</summary>
+
 ```js
 1n; // integer
 0b101n // binary
@@ -324,6 +325,7 @@ func.call(obj, val)
 
 <details>
 <summary>Invalid Example</summary>
+
 ```js
 // Invalid
 1.0n // no decimals
