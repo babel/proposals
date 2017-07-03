@@ -229,7 +229,7 @@ export v from 'mod'; // export default from
 <details>
 <summary>Code Example</summary>
 
-```
+```js
 obj?.prop       // optional property access
 obj?.[expr]     // optional property access
 func?.(...args) // optional function or method call
@@ -269,7 +269,7 @@ let a = do {
 <details>
 <summary>Code Example</summary>
 
-```
+```js
 // Decimal Literals
 let budget = 1_000_000_000_000;
 // Binary Literals
@@ -320,7 +320,7 @@ func.call(obj, val)
 <details>
 <summary>Code Example</summary>
 
-```
+```js
 1n // integer
 0b101n // binary
 0xFF123n // hex
@@ -332,7 +332,7 @@ func.call(obj, val)
 <details>
 <summary>Invalid Example</summary>
 
-```
+```js
 // Invalid
 1.0n // no decimals
 2e9n // no exponential notation
