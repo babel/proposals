@@ -191,6 +191,8 @@ class Bork {
 
 **Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)   
 **Plugins**: [babel-plugin-transform-decorators](babel-plugin-transform-decorators), [babel-plugin-transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)   
+**First Pull Request**: [babel/babylon#587](https://github.com/babel/babylon/pull/587)  
+**Babylon Label**: [Spec: Decorators](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Decorators%22)  
 <details>
 <summary>Code Example</summary>
 
