@@ -33,24 +33,25 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 **TC39 Champion**: Sebastian Markbage  
 **Preset**: [babel-preset-stage-3](https://www.npmjs.com/package/babel-preset-stage-3)  
 **Plugin**: [babel-plugin-transform-object-rest-spread](https://www.npmjs.com/package/babel-plugin-transform-object-rest-spread)  
+**Babylon Label**: [Spec: Object Rest/Spread](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Object+Rest%2FSpread%22)
 
 <details>
 <summary>Code Example</summary>
 
 ```js
-// Rest properties 
+// Rest properties
 let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
-console.log(x); // 1 
-console.log(y); // 2 
-console.log(z); // { a: 3, b: 4 } 
- 
-// Spread properties 
+console.log(x); // 1
+console.log(y); // 2
+console.log(z); // { a: 3, b: 4 }
+
+// Spread properties
 let n = { x, y, ...z };
-console.log(n); // { x: 1, y: 2, a: 3, b: 4 } 
+console.log(n); // { x: 1, y: 2, a: 3, b: 4 }
 ```
 </details>
 
-### [Asynchronous Iteration](https://github.com/tc39/proposal-async-iteration) 
+### [Asynchronous Iteration](https://github.com/tc39/proposal-async-iteration)
 
 **TC39 Champion**: Domenic Denicola  
 **Preset**: [babel-preset-stage-3](https://www.npmjs.com/package/babel-preset-stage-3)  
@@ -73,7 +74,7 @@ async function f() {
 ```
 </details>
 
-### [Dynamic Import](https://github.com/tc39/proposal-dynamic-import) 
+### [Dynamic Import](https://github.com/tc39/proposal-dynamic-import)
 
 **TC39 Champion**: Domenic Denicola  
 **Preset**: [babel-preset-stage-3](https://www.npmjs.com/package/babel-preset-stage-3)  
@@ -111,8 +112,8 @@ const b = /\p{Script_Extensions=Greek}/u;
 ### [RegExp Named Capture Groups](https://github.com/tc39/proposal-regexp-named-groups)
 
 **TC39 Champion**: Daniel Ehrenberg, Brian Terlson  
-**Preset**: N/A
-**Plugins**: [babel-plugin-transform-modern-regexp with `namedCapturingGroups` flag](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp)  
+**Preset**: N/A  
+**Plugins**: [babel-plugin-transform-modern-regexp](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp) (with `namedCapturingGroups` flag)  
 <details>
 <summary>Code Example</summary>
 
@@ -133,9 +134,9 @@ let result = re.exec('2015-01-02');
 
 ### [Regexp DotAll Flag](https://github.com/tc39/proposal-regexp-dotall-flag)
 
-**TC39 Champion**: Daniel Ehrenberg, Jeff Morrison 
-**Preset**: N/A
-**Plugins**: [babel-plugin-transform-dotall-regex](https://github.com/mathiasbynens/babel-plugin-transform-dotall-regex), [babel-plugin-transform-modern-regexp with `dotAll` flag](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp)     
+**TC39 Champion**: Daniel Ehrenberg, Jeff Morrison
+**Preset**: N/A  
+**Plugins**: [babel-plugin-transform-dotall-regex](https://github.com/mathiasbynens/babel-plugin-transform-dotall-regex), [babel-plugin-transform-modern-regexp](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp) (with `dotAll` flag)   
 <details>
 <summary>Code Example</summary>
 
@@ -146,12 +147,14 @@ let result = re.exec('2015-01-02');
 
 ### [Class Fields](https://github.com/tc39/proposal-class-fields)
 
-**TC39 Champion**: Daniel Ehrenberg, Jeff Morrison 
+**TC39 Champion**: Daniel Ehrenberg, Jeff Morrison
 
 > Stage 2
 
-**Preset**: WIP
-**Plugins**: WIP
+**Preset**: WIP  
+**Plugins**: WIP  
+**First Pull Request**: [babel/babylon#608](https://github.com/babel/babylon/issues/608) by [@diervo](https://github.com/diervo)  
+**Babylon Label**: [Spec: Class Fields](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Class+Fields%22)  
 
 > Stage 1
 
@@ -177,17 +180,19 @@ class Bork {
 
 ### [Class and Property Decorators](https://github.com/tc39/proposal-decorators)
 
-**TC39 Champion**: Yehuda Katz and Brian Terlson 
+**TC39 Champion**: Yehuda Katz and Brian Terlson
 
 > Stage 2
 
-**Preset**: WIP
-**Plugins**: WIP
+**Preset**: WIP  
+**Plugins**: WIP  
 
 > Stage 1
 
 **Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)   
 **Plugins**: [babel-plugin-transform-decorators](babel-plugin-transform-decorators), [babel-plugin-transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)   
+**First Pull Request**: [babel/babylon#587](https://github.com/babel/babylon/pull/587) by [@peey](https://github.com/peey)  
+**Babylon Label**: [Spec: Decorators](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Decorators%22)  
 <details>
 <summary>Code Example</summary>
 
@@ -259,6 +264,8 @@ let a = do {
 **TC39 Champion**: Sam Goto  
 **Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)  
 **Plugins**: [babel-plugin-transform-numeric-separator](https://www.npmjs.com/package/babel-plugin-transform-numeric-separator)  
+**First Pull Request**: [babel/babylon#541](https://github.com/babel/babylon/pull/541) by [@rwaldron](https://github.com/rwaldron)  
+**Babylon Label**: [Spec: Numeric Separator](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Numeric+Separator%22)  
 <details>
 <summary>Code Example</summary>
 
@@ -297,9 +304,8 @@ func.call(obj, val)
 
 ## Parser Only
 
-### `function.sent`
+### [`function.sent`](https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md)
 
-**Info**: https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md
 **TC39 Champion**: Allen Wirfs-Brock   
 **Preset**: WIP  
 **Plugins**: WIP  
@@ -315,7 +321,7 @@ func.call(obj, val)
 <summary>Code Example</summary>
 
 ```js
-1n; // integer
+1n // integer
 0b101n // binary
 0xFF123n // hex
 0o16432n // octal
@@ -339,12 +345,14 @@ func.call(obj, val)
 **TC39 Champion**: Domenic Denicola  
 **Preset**: [babel-preset-stage-2](https://www.npmjs.com/package/babel-preset-stage-2)  
 **Plugins**: [babel-plugin-syntax-import-meta](https://www.npmjs.com/package/babel-plugin-syntax-import-meta)  
+**First Pull Request**: [babel/babylon#544](https://github.com/babel/babylon/pull/544) by [@jkrems](https://github.com/jkrems)  
+**Babylon Label**: [Spec: import.meta](https://github.com/babel/babylon/issues?q=import.meta+is%3Aclosed+label%3A%22Spec%3A+import.meta%22)  
 <details>
 <summary>Code Example</summary>
 
 ```js
 import.meta.url;
-mport.meta.scriptElement.dataset.size;
+import.meta.scriptElement.dataset.size;
 ```
 </details>
 
