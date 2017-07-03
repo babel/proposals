@@ -33,6 +33,7 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 **TC39 Champion**: Sebastian Markbage  
 **Preset**: [babel-preset-stage-3](https://www.npmjs.com/package/babel-preset-stage-3)  
 **Plugin**: [babel-plugin-transform-object-rest-spread](https://www.npmjs.com/package/babel-plugin-transform-object-rest-spread)  
+**Babylon Label**: [Spec: Object Rest/Spread](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Object+Rest%2FSpread%22)
 
 <details>
 <summary>Code Example</summary>
