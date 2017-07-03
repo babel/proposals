@@ -224,7 +224,7 @@ export v from 'mod'; // export default from
 <details>
 <summary>Code Example</summary>
 
-```js
+```
 obj?.prop       // optional property access
 obj?.[expr]     // optional property access
 func?.(...args) // optional function or method call
@@ -262,7 +262,7 @@ let a = do {
 <details>
 <summary>Code Example</summary>
 
-```js
+```
 // Decimal Literals
 let budget = 1_000_000_000_000;
 // Binary Literals
@@ -297,7 +297,7 @@ func.call(obj, val)
 
 ## Parser Only
 
-### [function.sent](https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md)
+### [`function.sent`](https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md)
 
 **TC39 Champion**: Allen Wirfs-Brock   
 **Preset**: WIP  
@@ -312,8 +312,9 @@ func.call(obj, val)
 **Babylon Label**: [Spec: BigInt](https://github.com/babel/babylon/issues?utf8=%E2%9C%93&q=label%3A%22Spec%3A%20BigInt%22%20)  
 <details>
 <summary>Code Example</summary>
-```js
-1n; // integer
+
+```
+1n // integer
 0b101n // binary
 0xFF123n // hex
 0o16432n // octal
@@ -323,7 +324,8 @@ func.call(obj, val)
 
 <details>
 <summary>Invalid Example</summary>
-```js
+
+```
 // Invalid
 1.0n // no decimals
 2e9n // no exponential notation
