@@ -153,7 +153,7 @@ let result = re.exec('2015-01-02');
 
 **Preset**: WIP  
 **Plugins**: WIP  
-**First Pull Request**: [babel/babylon#540](https://github.com/babel/babylon/issues/540)
+**First Pull Request**: [babel/babylon#608](https://github.com/babel/babylon/issues/608) by [@diervo](https://github.com/diervo)  
 **Babylon Label**: [Spec: Class Fields](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Class+Fields%22)  
 
 > Stage 1
@@ -191,7 +191,7 @@ class Bork {
 
 **Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)   
 **Plugins**: [babel-plugin-transform-decorators](babel-plugin-transform-decorators), [babel-plugin-transform-decorators-legacy](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy)   
-**First Pull Request**: [babel/babylon#587](https://github.com/babel/babylon/pull/587)  
+**First Pull Request**: [babel/babylon#587](https://github.com/babel/babylon/pull/587) by [@peey](https://github.com/peey)  
 **Babylon Label**: [Spec: Decorators](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Decorators%22)  
 <details>
 <summary>Code Example</summary>
@@ -264,8 +264,8 @@ let a = do {
 **TC39 Champion**: Sam Goto  
 **Preset**: [babel-preset-stage-1](https://www.npmjs.com/package/babel-preset-stage-1)  
 **Plugins**: [babel-plugin-transform-numeric-separator](https://www.npmjs.com/package/babel-plugin-transform-numeric-separator)  
-**First Pull Request**: [babel/balylon#538](https://github.com/babel/babylon/issues/538)
-**Babylon Label**: [Spec: Numeric Separator](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Numeric+Separator%22)
+**First Pull Request**: [babel/balylon#541](https://github.com/babel/babylon/pull/541) by [@rwaldron](https://github.com/rwaldron)  
+**Babylon Label**: [Spec: Numeric Separator](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Numeric+Separator%22)  
 <details>
 <summary>Code Example</summary>
 
@@ -345,7 +345,7 @@ func.call(obj, val)
 **TC39 Champion**: Domenic Denicola  
 **Preset**: [babel-preset-stage-2](https://www.npmjs.com/package/babel-preset-stage-2)  
 **Plugins**: [babel-plugin-syntax-import-meta](https://www.npmjs.com/package/babel-plugin-syntax-import-meta)  
-**First Pull Request**: [babel/babylon#544](https://github.com/babel/babylon/pull/544)  
+**First Pull Request**: [babel/babylon#544](https://github.com/babel/babylon/pull/544) by [@jkrems](https://github.com/jkrems)  
 **Babylon Label**: [Spec: import.meta](https://github.com/babel/babylon/issues?q=import.meta+is%3Aclosed+label%3A%22Spec%3A+import.meta%22)  
 <details>
 <summary>Code Example</summary>
