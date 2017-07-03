@@ -111,8 +111,8 @@ const b = /\p{Script_Extensions=Greek}/u;
 ### [RegExp Named Capture Groups](https://github.com/tc39/proposal-regexp-named-groups)
 
 **TC39 Champion**: Daniel Ehrenberg, Brian Terlson  
-**Preset**: N/A
-**Plugins**: [babel-plugin-transform-modern-regexp with `namedCapturingGroups` flag](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp)  
+**Preset**: N/A  
+**Plugins**: [babel-plugin-transform-modern-regexp](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp) (with `namedCapturingGroups` flag)  
 <details>
 <summary>Code Example</summary>
 
@@ -134,8 +134,8 @@ let result = re.exec('2015-01-02');
 ### [Regexp DotAll Flag](https://github.com/tc39/proposal-regexp-dotall-flag)
 
 **TC39 Champion**: Daniel Ehrenberg, Jeff Morrison
-**Preset**: N/A
-**Plugins**: [babel-plugin-transform-dotall-regex](https://github.com/mathiasbynens/babel-plugin-transform-dotall-regex), [babel-plugin-transform-modern-regexp with `dotAll` flag](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp)     
+**Preset**: N/A  
+**Plugins**: [babel-plugin-transform-dotall-regex](https://github.com/mathiasbynens/babel-plugin-transform-dotall-regex), [babel-plugin-transform-modern-regexp](https://www.npmjs.com/package/babel-plugin-transform-modern-regexp) (with `dotAll` flag)   
 <details>
 <summary>Code Example</summary>
 
@@ -150,8 +150,8 @@ let result = re.exec('2015-01-02');
 
 > Stage 2
 
-**Preset**: WIP
-**Plugins**: WIP
+**Preset**: WIP  
+**Plugins**: WIP  
 
 > Stage 1
 
@@ -181,8 +181,8 @@ class Bork {
 
 > Stage 2
 
-**Preset**: WIP
-**Plugins**: WIP
+**Preset**: WIP  
+**Plugins**: WIP  
 
 > Stage 1
 
@@ -297,9 +297,8 @@ func.call(obj, val)
 
 ## Parser Only
 
-### `function.sent`
+### [function.sent](https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md)
 
-**Info**: https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md
 **TC39 Champion**: Allen Wirfs-Brock   
 **Preset**: WIP  
 **Plugins**: WIP  
