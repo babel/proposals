@@ -195,6 +195,40 @@ class Bork {
 @frozen class Foo {
   @configurable(false) @enumerable(true) method() {}
 }
+function frozen(constructor, parent, elements) {
+  return {
+    constructor,
+    elements,
+    finisher(constructor) {
+      Object.freeze(constructor.prototype)
+      Object.freeze(constructor)
+    }
+  }
+}
+function configurable(configurable) {
+  return decorator;
+  function decorator(previousDescriptor) {
+    return {
+      ...previousDescriptor,
+      descriptor: {
+        ...previousDescriptor.descriptor,
+        configurable
+      }
+    }
+  }
+}
+function enumerable(enumerable) {
+  return decorator;
+  function decorator(previousDescriptor) {
+    return {
+      ...previousDescriptor,
+      descriptor: {
+        ...previousDescriptor.descriptor,
+        enumerable
+      }
+    }
+  }
+}
 ```
 </details>
 
