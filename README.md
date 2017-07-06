@@ -361,9 +361,8 @@ import.meta.scriptElement.dataset.size;
 ### [Pattern matching](https://github.com/tc39/proposal-pattern-matching)
 
 **TC39 Champion**: Brian Terlson (Microsoft, @bterlson), Sebastian Markbåge (Facebook, @sebmarkbage)  
-**Preset**: -
-**Plugins**: - 
-**First Pull Request**: -
+**Preset**: WIP    
+**Plugins**: WIP    
 **Babylon Label**: [Spec: pattern matching](https://github.com/babel/babylon/labels/Spec%3A%20Pattern%20matching)  
 <details>
 <summary>Code Example</summary>
