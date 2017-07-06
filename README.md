@@ -21,7 +21,7 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 | [`import.meta`](#importmeta)                                        | 2             | Parsable |
 | [`export * as ns from "mod";`](#export-extensions)                  | 1             | 1        |
 | [`export v from "mod";`](#export-extensions)                        | 1             | 1        |
-| [Generator Arrow Functions](#generator-arrow-functions)             | 1             | N/A      |
+| ~~[Generator Arrow Functions](#generator-arrow-functions)~~         |               |          |
 | [Optional Chaining](#optional-chaining)                             | 1             | 1        |
 | [`do` Expressions](#do-expressions)                                 | 1             | 1        |
 | [Numeric Separator](#numeric-separator)                             | 1             | 1        |
