@@ -14,11 +14,11 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 | [RegExp Unicode Property Escapes](#regexp-unicode-property-escapes) | 3             | 3        |
 | [RegExp Named Capture Groups](#regexp-named-capture-groups)         | 3             | 3        |
 | [RegExp DotAll Flag](#regexp-dotall-flag)                           | 3             | 3        |
-| [`function.sent`](#functionsent)                                    | 2             | Parseble |
+| [`function.sent`](#functionsent)                                    | 2             | Parsable |
 | [Class Fields](#class-fields)                                       | 2             | 2        |
 | [Class and Property Decorators](#class-and-property-decorators)     | 2             | 1        |
-| [BigInt](#bigint)                                                   | 2             | Parseble |
-| [`import.meta`](#importmeta)                                        | 2             | Parseble |
+| [BigInt](#bigint)                                                   | 2             | Parsable |
+| [`import.meta`](#importmeta)                                        | 2             | Parsable |
 | [`export * as ns from "mod";`](#export-extensions)                  | 1             | 1        |
 | [`export v from "mod";`](#export-extensions)                        | 1             | 1        |
 | [Generator Arrow Functions](#generator-arrow-functions)             | 1             | N/A      |
