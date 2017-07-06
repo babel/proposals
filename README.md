@@ -26,6 +26,8 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 | [`do` Expressions](#do-expressions)                                 | 1             | 1        |
 | [Numeric Separator](#numeric-separator)                             | 1             | 1        |
 | [Function Bind](#function-bind)                                     | 0             | 0        |
+| [Pattern matching](#pattern-matching)                               | 0             | 0        |
+
 ## Implemented
 
 ### [Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread)
@@ -353,6 +355,42 @@ func.call(obj, val)
 ```js
 import.meta.url;
 import.meta.scriptElement.dataset.size;
+```
+</details>
+
+### [Pattern matching](https://github.com/tc39/proposal-pattern-matching)
+
+**TC39 Champion**: Brian Terlson (Microsoft, @bterlson), Sebastian Markbåge (Facebook, @sebmarkbage)  
+**Preset**: -
+**Plugins**: - 
+**First Pull Request**: -
+**Babylon Label**: [Spec: pattern matching](https://github.com/babel/babylon/labels/Spec%3A%20Pattern%20matching)  
+<details>
+<summary>Code Example</summary>
+
+```js
+let length = vector => match (vector) {
+    { x, y, z }: Math.sqrt(x ** 2 + y ** 2 + z ** 2),
+    { x, y }:   Math.sqrt(x ** 2 + y ** 2),
+    [...]:      vector.length,
+    else: {
+        throw new Error("Unknown vector type");
+    }
+}
+```
+
+```js
+let isVerbose = config => match (config) {
+    { output: { verbose: true } }: true,
+    else: false
+}
+
+let outOfBoundsPoint = p => match (p) {
+    { x > 100, y }: true,
+    { x, y > 100 }: true,
+    else: false
+}
+
 ```
 </details>
 
