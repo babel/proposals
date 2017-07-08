@@ -358,7 +358,9 @@ import.meta.scriptElement.dataset.size;
 ```
 </details>
 
-### [Pattern matching](https://github.com/tc39/proposal-pattern-matching)
+## Not Implemented
+
+### [Pattern Matching](https://github.com/tc39/proposal-pattern-matching)
 
 **TC39 Champion**: Brian Terlson (Microsoft, @bterlson), Sebastian Markbåge (Facebook, @sebmarkbage)  
 **Preset**: WIP    
@@ -392,8 +394,6 @@ let outOfBoundsPoint = p => match (p) {
 
 ```
 </details>
-
-## Not Implemented
 
 ### Generator Arrow Functions
 
