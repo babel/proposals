@@ -365,7 +365,8 @@ import.meta.scriptElement.dataset.size;
 **TC39 Champion**: Brian Terlson (Microsoft, @bterlson), Sebastian Markbåge (Facebook, @sebmarkbage)  
 **Preset**: WIP    
 **Plugins**: WIP    
-**Babylon Label**: [Spec: pattern matching](https://github.com/babel/babylon/labels/Spec%3A%20Pattern%20matching)  
+**Babylon Label**: [Spec: pattern matching](https://github.com/babel/babylon/labels/Spec%3A%20Pattern%20matching)
+**First Pull Request**: [babel/babylon#635](https://github.com/babel/babylon/pull/635) by [@krzkaczor](https://github.com/krzkaczor)
 <details>
 <summary>Code Example</summary>
 
