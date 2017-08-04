@@ -14,7 +14,7 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 | [RegExp Unicode Property Escapes](#regexp-unicode-property-escapes) | 3             | 3        |
 | [RegExp Named Capture Groups](#regexp-named-capture-groups)         | 3             | 3        |
 | [RegExp DotAll Flag](#regexp-dotall-flag)                           | 3             | 3        |
-| [`function.sent`](#functionsent)                                    | 2             | Parsable |
+| [`function.sent`](#functionsent)                                    | 2             | 2        |
 | [Class Fields](#class-fields)                                       | 2             | 2        |
 | [Class and Property Decorators](#class-and-property-decorators)     | 2             | 1        |
 | [BigInt](#bigint)                                                   | 2             | Parsable |
@@ -338,13 +338,27 @@ func.call(obj, val)
 ```
 </details>
 
-## Parser Only
-
 ### [`function.sent`](https://github.com/allenwb/ESideas/blob/master/Generator%20metaproperty.md)
 
-**TC39 Champion**: Allen Wirfs-Brock   
-**Preset**: WIP  
-**Plugins**: WIP  
+**TC39 Champion**: Allen Wirfs-Brock  
+**Preset**: [babel-preset-stage-2](https://www.npmjs.com/package/babel-preset-stage-2)  
+**Plugins**: [babel-plugin-transform-function-sent](https://www.npmjs.com/package/babel-plugin-transform-function-sent)    
+<details> 
+<summary>Code Example</summary>
+
+```js
+function* generator() {
+  console.log("Sent", function.sent);
+  console.log("Yield", yield);
+}
+
+const iterator = generator();
+iterator.next(1); // Logs "Sent 1"
+iterator.next(2); // Logs "Yield 2"
+```
+</details>
+
+## Parser Only
 
 ### [BigInt](https://github.com/tc39/proposal-bigint)
 
