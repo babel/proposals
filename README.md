@@ -456,3 +456,13 @@ let outOfBoundsPoint = p => match (p) {
 ()=>*{}
 ```
 </details>
+
+## FAQ
+
+### When does Babel implement new features?
+
+Babel will accept a PR for a proposal that is intended to go through the TC39 Proposal Process, meaning we could implement something starting a Stage 0 if desired. This doesn't mean Babel maintainers will implement it, but that we will work with TC39 Champions to get an implementation in if they or someone in the community wants to make it.
+
+It's our intention as a project to help TC39 get feedback for the community which is ultimately through using the new syntax/feature in their codebases. However there's a balance between supporting new proposals and informing users that any proposal is still a proposal and subject to change. In order to move the community forward we will deprecate older versions of plugins when the spec changes, document those changes, and see if we can automate the upgrade via a codemod. This way everyone is moving towards the later stages and closer to what will be in the spec if the proposal makes it to Stage 4.
+
+This means we will also include proposals in this repo that haven't been presented to the committee yet if they are concrete enough and someone on TC39 is planning on presenting it (and marked appropriately).
