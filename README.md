@@ -14,8 +14,8 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 | [RegExp Unicode Property Escapes](#regexp-unicode-property-escapes) | 3             | 3        |
 | [RegExp Named Capture Groups](#regexp-named-capture-groups)         | 3             | 3        |
 | [RegExp DotAll Flag](#regexp-dotall-flag)                           | 3             | 3        |
+| [Class Fields](#class-fields)                                       | 3             | 2        |
 | [`function.sent`](#functionsent)                                    | 2             | 2        |
-| [Class Fields](#class-fields)                                       | 2             | 2        |
 | [Class and Property Decorators](#class-and-property-decorators)     | 2             | 1        |
 | [BigInt](#bigint)                                                   | 2             | Parsable |
 | [`import.meta`](#importmeta)                                        | 2             | Parsable |
