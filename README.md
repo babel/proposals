@@ -466,3 +466,17 @@ Babel will accept any PR for a proposal that is intended to go through the TC39 
 It's our intention (and one of our main goals) as a project to help TC39 get feedback from the community through using the new syntax in their codebases. There is however a balance between supporting new proposals and informing users that any proposal is still just a proposal and subject to change. In order to move the community forward, we will continously make changes to adhere to the spec as patches. If bigger changes require a major version, we will deprecate older versions of plugins, document those changes, and see if we can automate the upgrade via a codemod. This way everyone is moving towards Stage 4 and closer to what will be in the spec if the proposal makes it to the end.
 
 This means we will also include proposals in this repo that haven't been presented to the committee yet if they are concrete enough and someone on TC39 is planning on presenting it (and marked appropriately).
+
+### What's the process?
+
+- Find a TC39 Champion
+- Create an issue in this repo to point to the proposal repo (e.g. https://github.com/babel/proposals/issues/7)
+  - Purpose is to track everything about this proposal: champion, spec link, stage, examples, possible implementation strategies, history/progress. Plan to update as things happen so people can follow along.
+- Create a Slack channel for discussion like `#proposal-xyz` (e.g. `#proposal-class-fields`)
+- Create a PR to Babylon for parser support: https://github.com/babel/babylon/blob/master/CONTRIBUTING.md#creating-a-new-plugin-spec-new
+  - May need to create a new plugin if the spec changes significantly (e.g. `decorators` and `decorators2`
+- Create a PR to Babel https://github.com/babel/babel/wiki/Adding-a-new-Proposal-to-Babel
+  - In the future: name the package `babel-plugin-proposal-` instead of `babel-plugin-transform-`
+  - Rename to `babel-plugin-transform-year-x` once Stage 4.
+  - Proposals should be versioned independently because we know that they inherently will change so we want to allow for breaking changes, changelog, codemods, and easy upgrade path (deprecate old versions, bump stage presets).
+- Add to a Stage preset if necessary
