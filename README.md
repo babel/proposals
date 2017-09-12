@@ -315,7 +315,7 @@ let message = 0xA0_B0_C0;
 ```
 </details>
 
-### [Function Bind](https://github.com/tc39/proposal-regexp-named-groups)
+### [Function Bind](https://github.com/tc39/proposal-bind-operator)
 
 **TC39 Champion**: Brian Terlson & Matthew Podwysocki  
 **Preset**: [babel-preset-stage-0](https://www.npmjs.com/package/babel-preset-stage-0)  
