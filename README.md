@@ -4,7 +4,7 @@
 
 ## Proposals
 
-For the official list, check the [TC39 repo](https://github.com/tc39/proposals). This list only contains all proposals higher than Stage 0 that are compilable by Babel. (If Stage 4, it will be in [preset-env](https://github.com/babel/babel-preset-env))
+For the official list, check the [TC39 repo](https://github.com/tc39/proposals). This list only contains all proposals higher than Stage 0 that are compilable by Babel. (If Stage 4, it will be in [preset-env](https://github.com/babel/babel/tree/master/packages/babel-preset-env))
 
 | Proposal Link                                                       | Current Stage | Status   |
 |---------------------------------------------------------------------|---------------|----------|
