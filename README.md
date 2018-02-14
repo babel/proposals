@@ -1,6 +1,6 @@
 # Babel progress on [ECMAScript](https://github.com/tc39/ecma262) proposals
-
 ## [Official TC39 Proposals Repo](https://github.com/tc39/proposals)
+#### [TC39 Proposals Process Document](https://tc39.github.io/process-document/)
 
 ## Proposals
 
