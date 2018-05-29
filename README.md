@@ -8,8 +8,6 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 
 | Proposal Link                                                       | Current Stage | Status   |
 |---------------------------------------------------------------------|---------------|----------|
-| [Rest/Spread Properties](#restspread-properties)                    | 3             | 3        |
-| [Asynchronous Iteration](#asynchronous-iteration)                   | 3             | 3        |
 | [Dynamic Import](#dynamic-import)                                   | 3             | 3        |
 | [RegExp Unicode Property Escapes](#regexp-unicode-property-escapes) | 3             | 3        |
 | [RegExp Named Capture Groups](#regexp-named-capture-groups)         | 3             | 3        |
@@ -29,52 +27,6 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 | [Pattern matching](#pattern-matching)                               | 0             | 0        |
 
 ## Implemented
-
-### [Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread)
-
-**TC39 Champion**: Sebastian Markbage  
-**Preset**: [babel-preset-stage-3](https://www.npmjs.com/package/babel-preset-stage-3)  
-**Plugin**: [babel-plugin-transform-object-rest-spread](https://www.npmjs.com/package/babel-plugin-transform-object-rest-spread)  
-**Babylon Label**: [Spec: Object Rest/Spread](https://github.com/babel/babylon/issues?q=is%3Aopen+is%3Aissue+label%3A%22Spec%3A+Object+Rest%2FSpread%22)
-
-<details>
-<summary>Code Example</summary>
-
-```js
-// Rest properties
-let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
-console.log(x); // 1
-console.log(y); // 2
-console.log(z); // { a: 3, b: 4 }
-
-// Spread properties
-let n = { x, y, ...z };
-console.log(n); // { x: 1, y: 2, a: 3, b: 4 }
-```
-</details>
-
-### [Asynchronous Iteration](https://github.com/tc39/proposal-async-iteration)
-
-**TC39 Champion**: Domenic Denicola  
-**Preset**: [babel-preset-stage-3](https://www.npmjs.com/package/babel-preset-stage-3)  
-**Plugin**: [babel-plugin-transform-async-generator-functions](https://www.npmjs.com/package/babel-plugin-transform-async-generator-functions)  
-
-<details>
-<summary>Code Example</summary>
-
-```js
-async function* agf() {
-  await 1;
-  yield 2;
-}
-
-async function f() {
-  for await (let x of y) {
-    g(x);
-  }
-}
-```
-</details>
 
 ### [Dynamic Import](https://github.com/tc39/proposal-dynamic-import)
 
