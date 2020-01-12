@@ -8,23 +8,23 @@ For the official list, check the [TC39 repo](https://github.com/tc39/proposals).
 
 | Proposal Link                                                       | Current Stage | Status   |
 |---------------------------------------------------------------------|---------------|----------|
-| [Dynamic Import](#dynamic-import)                                   | 3             | 3        |
-| [RegExp Unicode Property Escapes](#regexp-unicode-property-escapes) | 3             | 3        |
-| [RegExp Named Capture Groups](#regexp-named-capture-groups)         | 3             | 3        |
-| [RegExp DotAll Flag](#regexp-dotall-flag)                           | 3             | 3        |
+| [Dynamic Import](#dynamic-import)                                   | 4             | 3        |
+| [RegExp Unicode Property Escapes](#regexp-unicode-property-escapes) | 4             | 3        |
+| [RegExp Named Capture Groups](#regexp-named-capture-groups)         | 4             | 3        |
+| [RegExp DotAll Flag](#regexp-dotall-flag)                           | 4             | 3        |
 | [Class Fields](#class-fields)                                       | 3             | 2        |
 | [`function.sent`](#functionsent)                                    | 2             | 2        |
 | [Class and Property Decorators](#class-and-property-decorators)     | 2             | 1        |
-| [BigInt](#bigint)                                                   | 2             | Parsable |
-| [`import.meta`](#importmeta)                                        | 2             | Parsable |
-| [`export * as ns from "mod";`](#export-extensions)                  | 1             | 1        |
+| [BigInt](#bigint)                                                   | 4             | Parsable |
+| [`import.meta`](#importmeta)                                        | 3             | Parsable |
+| [`export * as ns from "mod";`](#export-extensions)                  | 4             | 1        |
 | [`export v from "mod";`](#export-extensions)                        | 1             | 1        |
 | [Generator Arrow Functions](#generator-arrow-functions)             | 1             | N/A      |
-| [Optional Chaining](#optional-chaining)                             | 1             | 1        |
+| [Optional Chaining](#optional-chaining)                             | 4             | 1        |
 | [`do` Expressions](#do-expressions)                                 | 1             | 1        |
-| [Numeric Separator](#numeric-separator)                             | 1             | 1        |
+| [Numeric Separator](#numeric-separator)                             | 3             | 1        |
 | [Function Bind](#function-bind)                                     | 0             | 0        |
-| [Pattern matching](#pattern-matching)                               | 0             | 0        |
+| [Pattern matching](#pattern-matching)                               | 1             | 0        |
 
 ## Implemented
 
