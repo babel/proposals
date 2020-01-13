@@ -371,28 +371,36 @@ import.meta.scriptElement.dataset.size;
 <summary>Code Example</summary>
 
 ```js
-let length = vector => match (vector) {
-    { x, y, z }: Math.sqrt(x ** 2 + y ** 2 + z ** 2),
-    { x, y }:   Math.sqrt(x ** 2 + y ** 2),
-    [...]:      vector.length,
-    else: {
-        throw new Error("Unknown vector type");
-    }
+const length = vector => {
+  case (vector) {
+    when { x, y, z } -> return Math.sqrt(x ** 2 + y ** 2 + z ** 2)
+    when { x, y } ->   return Math.sqrt(x ** 2 + y ** 2)
+    when [...etc] ->     return vector.length
+  }
 }
 ```
 
 ```js
-let isVerbose = config => match (config) {
-    { output: { verbose: true } }: true,
-    else: false
+const isVerbose = config => {
+   case (config) {
+    when {output: { verbose: true }} -> return true
+    when config -> return false
+    }
 }
 
-let outOfBoundsPoint = p => match (p) {
-    { x > 100, y }: true,
-    { x, y > 100 }: true,
-    else: false
-}
+```
 
+```js
+const res = await fetch(jsonService)
+case (res) {
+  when {status: 200, headers: {'Content-Length': s}} ->
+    console.log(`size is ${s}`)
+  when {status: 404} ->
+    console.log('JSON not found')
+  when {status} if (status >= 400) -> {
+    throw new RequestError(res)
+  }
+}
 ```
 </details>
 
@@ -415,6 +423,6 @@ let outOfBoundsPoint = p => match (p) {
 
 Babel will accept any PR for a proposal that is intended to go through the TC39 Proposal Process. This just means that we could implement and release a proposal starting at Stage 0. However this doesn't mean that we will implement it ourselves, but that we will work with both TC39 Champions and the community to get an implementation in. (And sometimes we have to wait for Summer of Code for that to happen).
 
-It's our intention (and one of our main goals) as a project to help TC39 get feedback from the community through using the new syntax in their codebases. There is however a balance between supporting new proposals and informing users that any proposal is still just a proposal and subject to change. In order to move the community forward, we will continously make changes to adhere to the spec as patches. If bigger changes require a major version, we will deprecate older versions of plugins, document those changes, and see if we can automate the upgrade via a codemod. This way everyone is moving towards Stage 4 and closer to what will be in the spec if the proposal makes it to the end.
+It's our intention (and one of our main goals) as a project to help TC39 get feedback from the community through using the new syntax in their codebases. There is however a balance between supporting new proposals and informing users that any proposal is still just a proposal and subject to change. In order to move the community forward, we will continuously make changes to adhere to the spec as patches. If bigger changes require a major version, we will deprecate older versions of plugins, document those changes, and see if we can automate the upgrade via a codemod. This way everyone is moving towards Stage 4 and closer to what will be in the spec if the proposal makes it to the end.
 
 This means we will also include proposals in this repo that haven't been presented to the committee yet if they are concrete enough and someone on TC39 is planning on presenting it (and marked appropriately).
